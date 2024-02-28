@@ -1,0 +1,39 @@
+#Question 1
+#1.Creating a list in Python
+list1 = [1, 2, 3, 4, 5]
+list2 = ['a', 'b', 'c', 'd', 'e']
+
+#2.Concatenate two lists index-wise
+concatenated_list = [str(list1[i]) + list2[i] for i in range(min(len(list1), len(list2))]
+
+print(concatenated_list)
+
+#Question 2
+#1: Turn every item of a list into its square
+original_list = [1, 2, 3, 4, 5]
+squared_list = [x**2 for x in original_list]
+print(squared_list)
+
+#2: Concatenate two lists in the following order
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+concatenated_list = list1 + list2
+print(concatenated_list)
+
+#Question 3
+# 1.Merge two Python dictionaries into one
+dict1 = {'a': 100, 'b': 200}
+dict2 = {'x': 300, 'y': 400}
+merged_dict = {**dict1, **dict2}
+print(merged_dict)
+
+# 2.Print the value of key ‘history’ from the below dict
+sample_dict = {'name': 'John', 'age': 25, 'history': ['A', 'B', 'C']}
+print(sample_dict.get('history'))
+
+# 3.Initialize dictionary with default values
+from collections import defaultdict
+default_dict = defaultdict(int)
+default_dict['a'] = 10
+default_dict['b'] = 20
+print(default_dict)
